@@ -1,5 +1,18 @@
+import Button from "@/components/Button";
+import Link from "next/link";
+import styled from "styled-components";
+
 export default function HomePage() {
-  return <h1>Hello From Next!</h1>;
+  return (
+    <>
+      <Button>Click me!!!</Button>
+      <Button>Click me too</Button>
+      <MyLink href={""}>A styled link.</MyLink>
+    </>
+  );
 }
 
-//styled-components
+const MyLink = styled(Link)`
+  color: black;
+  padding-inline: 2rem;
+`;
